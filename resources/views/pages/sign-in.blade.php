@@ -5,7 +5,7 @@
 @section('content')
 
 <section
-    class="relative overflow-hidden bg-[#f8f0e3]"
+    class="relative mb-10 overflow-hidden bg-[#f8f0e3] lg:mb-16"
 >
 
     {{-- BACKGROUND DECORATION --}}
@@ -19,7 +19,7 @@
 
 
     <div
-        class="relative mx-auto grid min-h-[calc(100vh-76px)] max-w-7xl lg:grid-cols-[1.05fr_0.95fr]"
+        class="relative mx-auto grid min-h-[calc(100vh-76px)] max-w-7xl lg:min-h-[720px] lg:grid-cols-[1.05fr_0.95fr]"
     >
 
         {{-- LEFT VISUAL --}}
@@ -81,13 +81,13 @@
                         class="grid grid-cols-3 gap-4"
                     >
 
-                        {{-- MATCHA --}}
+                        {{-- Coffee --}}
                         <div
                             class="group flex aspect-square items-center justify-center overflow-hidden rounded-[28px] bg-[#f1dfc7] p-5"
                         >
                             <img
-                                src="{{ asset('images/matcha.png') }}"
-                                alt="Matcha"
+                                src="{{ asset('images/coffee-shake.png') }}"
+                                alt="Coffee"
                                 class="h-full w-full object-contain transition duration-300 group-hover:scale-110"
                             >
                         </div>
@@ -98,7 +98,7 @@
                             class="group flex aspect-square items-center justify-center overflow-hidden rounded-[28px] bg-[#ead5b9] p-5"
                         >
                             <img
-                                src="{{ asset('images/biscoff cake.png') }}"
+                                src="{{ asset('images/biscoff-cake.png') }}"
                                 alt="Biscoff Cake"
                                 class="h-full w-full object-contain transition duration-300 group-hover:scale-110"
                             >
@@ -127,7 +127,7 @@
 
         {{-- RIGHT SIGN IN FORM --}}
         <div
-            class="flex items-center justify-center px-5 py-14 sm:px-10 lg:px-14 xl:px-20"
+            class="flex items-start justify-center px-5 py-12 sm:px-10 lg:px-14 lg:py-16 xl:px-20"
         >
 
             <div
@@ -141,7 +141,7 @@
                 >
 
                     <div
-                        class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-[#dbcbb5] bg-white"
+                        class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-[#5a3b2d] bg-[#291a13]"
                     >
                         <img
                             src="{{ asset('images/logo.png') }}"

@@ -11,7 +11,7 @@
             class="flex items-center gap-3"
         >
             <div
-                class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-[#dbcbb5] bg-white"
+                class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-[#5a3b2d] bg-[#291a13]"
             >
                 <img
                     src="{{ asset('images/logo.png') }}"

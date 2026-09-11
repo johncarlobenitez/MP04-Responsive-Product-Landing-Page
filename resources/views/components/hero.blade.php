@@ -1,73 +1,58 @@
 <section
     id="home"
-    class="relative overflow-hidden bg-[#f7eedf]"
+    class="relative overflow-hidden bg-[#f8f0e3]"
 >
     <div
-        class="mx-auto grid min-h-[680px] max-w-6xl items-center gap-14 px-5 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:py-20"
+        class="absolute -left-32 top-40 h-72 w-72 rounded-full bg-[#d79366]/10 blur-3xl"
+    ></div>
+
+    <div
+        class="absolute right-0 top-20 h-96 w-96 rounded-full bg-[#d6bb96]/20 blur-3xl"
+    ></div>
+
+
+    <div
+        class="mx-auto grid min-h-[700px] max-w-7xl items-center gap-14 px-5 py-16 lg:grid-cols-2 lg:px-8 lg:py-20"
     >
 
-        {{-- LEFT CONTENT --}}
+        {{-- CONTENT --}}
         <div class="relative z-10">
 
-            {{-- OPEN STATUS --}}
-            <div class="mb-7 flex items-center gap-2.5 text-sm text-[#705e50]">
+            <div
+                class="mb-6 inline-flex items-center gap-2 rounded-full border border-[#ded0bc] bg-white/50 px-4 py-2 text-xs font-medium text-[#725f50]"
+            >
+                <span class="h-2 w-2 rounded-full bg-[#5d7854]"></span>
 
-                <span class="relative flex h-2.5 w-2.5">
-
-                    <span
-                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#56704d] opacity-30"
-                    ></span>
-
-                    <span
-                        class="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#56704d]"
-                    ></span>
-
-                </span>
-
-                <span>
-                    Open daily — 6:00 AM to 10:00 PM
-                </span>
-
+                Open daily — 10:00 AM to 12:00 AM
             </div>
 
 
-            {{-- HEADING --}}
             <h1
-                class="max-w-[620px] font-['Playfair_Display'] text-[3.25rem] font-medium leading-[1.08] tracking-[-0.025em] text-[#281b14] sm:text-6xl lg:text-[4.15rem]"
+                class="max-w-[650px] font-['Playfair_Display'] text-5xl font-semibold leading-[1.06] tracking-[-0.035em] sm:text-6xl lg:text-[68px]"
             >
                 Coffee, comfort,
 
-                <span class="block text-[#c5683b]">
+                <span class="text-[#bf6539]">
                     and your quiet corner.
                 </span>
             </h1>
 
 
-            {{-- DESCRIPTION --}}
             <p
-                class="mt-7 max-w-[590px] text-[15px] leading-8 text-[#6b594c] sm:text-base"
+                class="mt-7 max-w-xl text-base leading-8 text-[#6e5c4f] sm:text-[17px]"
             >
-                Brew O'Clock is a neighborhood café made for slow mornings,
-                focused work sessions, good conversations, and coffee worth
-                coming back for.
+                Brew O'Clock is a cozy neighborhood café where good coffee,
+                desserts, quiet work sessions, and conversations come together.
             </p>
 
 
-            {{-- ACTIONS --}}
             <div class="mt-9 flex flex-wrap gap-3">
 
                 <a
                     href="#menu"
-                    class="inline-flex items-center justify-center bg-[#c5683b] px-6 py-3.5 text-sm font-semibold text-white transition duration-200 hover:bg-[#a9522d]"
+                    class="inline-flex items-center gap-2 rounded-full bg-[#bf6539] px-6 py-3.5 text-sm font-semibold text-white shadow-md shadow-[#bf6539]/15 transition hover:-translate-y-0.5 hover:bg-[#a9522f]"
                 >
-                    View Our Favorites
-                </a>
-
-                <a
-                    href="#contact"
-                    class="inline-flex items-center justify-center gap-2 border border-[#37261d] px-6 py-3.5 text-sm font-medium text-[#37261d] transition duration-200 hover:bg-[#37261d] hover:text-white"
-                >
-                    Find Our Café
+                    Start Your Order
 
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -83,92 +68,114 @@
                             d="m9 18 6-6-6-6"
                         />
                     </svg>
+                </a>
 
+
+                <a
+                    href="#contact"
+                    class="rounded-full border border-[#38281f] px-6 py-3.5 text-sm font-semibold transition hover:bg-[#38281f] hover:text-white"
+                >
+                    Find Our Café
                 </a>
 
             </div>
 
 
-            {{-- SMALL INFORMATION --}}
             <div
-                class="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 border-t border-[#ddcfbc] pt-5 text-xs text-[#796657]"
+                class="mt-10 flex flex-wrap gap-6 border-t border-[#ddd0bd] pt-6"
             >
 
-                <span class="flex items-center gap-2">
-                    <span class="h-1.5 w-1.5 rounded-full bg-[#c5683b]"></span>
-                    Coffee & pastries
-                </span>
+                <div>
+                    <p class="font-semibold">
+                        Fresh
+                    </p>
 
-                <span class="flex items-center gap-2">
-                    <span class="h-1.5 w-1.5 rounded-full bg-[#c5683b]"></span>
-                    Free Wi-Fi
-                </span>
+                    <p class="mt-1 text-xs text-[#857264]">
+                        Coffee & desserts
+                    </p>
+                </div>
 
-                <span class="flex items-center gap-2">
-                    <span class="h-1.5 w-1.5 rounded-full bg-[#c5683b]"></span>
-                    Cowork friendly
-                </span>
+                <div class="h-10 w-px bg-[#dacbb7]"></div>
+
+                <div>
+                    <p class="font-semibold">
+                        Free
+                    </p>
+
+                    <p class="mt-1 text-xs text-[#857264]">
+                        Wi-Fi access
+                    </p>
+                </div>
+
+                <div class="h-10 w-px bg-[#dacbb7]"></div>
+
+                <div>
+                    <p class="font-semibold">
+                        Daily
+                    </p>
+
+                    <p class="mt-1 text-xs text-[#857264]">
+                        6 AM – 10 PM
+                    </p>
+                </div>
 
             </div>
 
         </div>
 
 
-        {{-- RIGHT VISUAL --}}
-        <div class="relative mx-auto w-full max-w-[510px] lg:ml-auto">
+        {{-- PRODUCT COLLAGE --}}
+        <div
+            class="relative mx-auto min-h-[550px] w-full max-w-[560px]"
+        >
 
-            {{-- BACK DECORATIVE CIRCLE --}}
             <div
-                class="absolute -left-12 top-12 h-40 w-40 rounded-full bg-[#dfbb90]/55"
-            ></div>
-
-
-            {{-- MAIN IMAGE PLACEHOLDER --}}
-            <div
-                class="relative overflow-hidden rounded-t-[230px] border border-[#dac8ae] bg-[#e9dbc4] p-3 shadow-[0_25px_70px_rgba(74,52,37,0.10)]"
+                class="absolute bottom-0 right-2 h-[490px] w-[360px] overflow-hidden rounded-t-[210px] bg-[#e5d2b5] shadow-[0_30px_70px_rgba(63,42,28,0.12)] sm:w-[420px]"
             >
-
-                <x-image-placeholder
-                    label="Brew O'Clock Café"
-                    hint="Add your main café or coffee photo here"
-                    aspect="aspect-[4/5]"
-                    class="rounded-t-[215px]"
-                />
-
+                <img
+                    src="{{ asset('images/coffee-shake.png') }}"
+                    alt="Coffee Shake"
+                    class="h-full w-full object-contain p-12 sm:p-16"
+                >
             </div>
 
 
-            {{-- FLOATING INFO CARD --}}
             <div
-                class="absolute -bottom-5 -left-5 border border-white/10 bg-[#281a13] px-6 py-5 text-white shadow-[0_14px_35px_rgba(45,29,20,0.22)] sm:-left-8"
+                class="absolute left-0 top-10 z-20 flex h-40 w-40 items-center justify-center rounded-full border-[7px] border-[#f8f0e3] bg-[#f1e3cf] shadow-xl sm:h-44 sm:w-44"
             >
+                <img
+                    src="{{ asset('images/biscoff-cake.png') }}"
+                    alt="Biscoff Cake"
+                    class="h-[80%] w-[80%] object-contain"
+                >
+            </div>
 
+
+            <div
+                class="absolute right-0 top-16 z-20 hidden h-28 w-28 items-center justify-center rounded-3xl border-[5px] border-[#f8f0e3] bg-white shadow-xl sm:flex"
+            >
+                <img
+                    src="{{ asset('images/blueberry.png') }}"
+                    alt="Blueberry Cheesecake"
+                    class="h-[85%] w-[85%] object-contain"
+                >
+            </div>
+
+
+            <div
+                class="absolute bottom-8 left-2 z-30 rounded-2xl bg-[#291a13] px-6 py-5 text-white shadow-2xl sm:left-8"
+            >
                 <p
-                    class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#d9b8a2]"
+                    class="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#d6af96]"
                 >
                     Your Daily Corner
                 </p>
 
                 <p
-                    class="mt-1.5 font-['Playfair_Display'] text-xl font-semibold"
+                    class="mt-1 font-['Playfair_Display'] text-xl font-semibold"
                 >
                     Brew. Work. Unwind.
                 </p>
-
-            </div>
-
-
-            {{-- SMALL PHOTO PLACEHOLDER --}}
-            <div
-                class="absolute -right-5 top-12 hidden w-[145px] overflow-hidden border-4 border-[#f7eedf] shadow-lg sm:block"
-            >
-
-                <x-image-placeholder
-                    label="Coffee"
-                    hint="Product photo"
-                    aspect="aspect-square"
-                />
-
             </div>
 
         </div>

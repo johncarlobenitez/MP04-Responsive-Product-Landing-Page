@@ -8,12 +8,3 @@
 html {
     scroll-behavior: smooth;
 }
-
-body {
-    font-family: "DM Sans", sans-serif;
-}
-
-::selection {
-    background: #bd6639;
-    color: #ffffff;
-}

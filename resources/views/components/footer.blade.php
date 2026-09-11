@@ -1,84 +1,133 @@
-<footer id="footer" class="bg-[#211711] text-[#eadccc]">
+<footer
+    id="footer"
+    class="bg-[#211610] text-[#eadccd]"
+>
+    <div
+        class="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:grid-cols-3 lg:px-8"
+    >
 
-    <div class="mx-auto grid max-w-6xl gap-12 px-5 py-14 md:grid-cols-3 lg:px-8">
-
+        {{-- BRAND --}}
         <div>
+
             <div class="flex items-center gap-3">
-                <div class="flex h-8 w-8 items-center justify-center rounded-full border border-[#dbcbb9]">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        class="h-4 w-4"
+
+                <div
+                    class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-[#291a13]"
+                >
+                    <img
+                        src="{{ asset('images/logo.png') }}"
+                        alt="Brew O'Clock Logo"
+                        class="h-full w-full object-contain p-1"
                     >
-                        <path d="M4 8h12v5a6 6 0 0 1-6 6H9a5 5 0 0 1-5-5V8Z"/>
-                        <path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/>
-                    </svg>
                 </div>
 
-                <h3 class="font-['Playfair_Display'] text-xl font-semibold text-white">
-                    Brew <span class="text-[#cf7950]">O'</span>Clock
+                <h3
+                    class="font-['Playfair_Display'] text-xl font-semibold text-white"
+                >
+                    Brew
+                    <span class="text-[#ce7549]">O'</span>Clock
                 </h3>
+
             </div>
 
-            <p class="mt-5 max-w-xs text-sm leading-7 text-[#bba796]">
-                A neighborhood café for good coffee,
-                productive mornings, and quiet moments.
+
+            <p
+                class="mt-5 max-w-xs text-sm leading-7 text-[#bda998]"
+            >
+                A neighborhood café made for coffee,
+                conversations, quiet work sessions,
+                and everyday moments.
             </p>
+
         </div>
 
+
+        {{-- LINKS --}}
         <div>
-            <h3 class="text-sm font-semibold text-[#bba796]">
+
+            <h3
+                class="text-xs font-semibold uppercase tracking-[0.18em] text-[#a9907c]"
+            >
                 Quick Links
             </h3>
 
-            <nav class="mt-5 flex flex-col gap-3 text-sm">
-                <a href="#home" class="transition hover:text-white">
+            <nav
+                class="mt-5 flex flex-col gap-3 text-sm"
+            >
+                <a
+                    href="#home"
+                    class="transition hover:text-[#ce7549]"
+                >
                     Home
                 </a>
 
-                <a href="#features" class="transition hover:text-white">
+                <a
+                    href="#features"
+                    class="transition hover:text-[#ce7549]"
+                >
                     Features
                 </a>
 
-                <a href="#menu" class="transition hover:text-white">
+                <a
+                    href="#menu"
+                    class="transition hover:text-[#ce7549]"
+                >
                     Menu
                 </a>
 
-                <a href="#testimonials" class="transition hover:text-white">
+                <a
+                    href="#testimonials"
+                    class="transition hover:text-[#ce7549]"
+                >
                     Testimonials
                 </a>
             </nav>
+
         </div>
 
+
+        {{-- LOCATION --}}
         <div>
-            <h3 class="text-sm font-semibold text-[#bba796]">
+
+            <h3
+                class="text-xs font-semibold uppercase tracking-[0.18em] text-[#a9907c]"
+            >
                 Visit Us
             </h3>
 
-            <p class="mt-5 max-w-xs text-sm leading-7">
+            <p
+                class="mt-5 max-w-xs text-sm leading-7"
+            >
                 2nd Floor, Manangkil Law Office Building,
                 National Highway, Brgy. Labuin,
                 Pila, Laguna 4010
             </p>
 
-            <p class="mt-4 text-sm text-[#bba796]">
-                Open daily
-            </p>
+            <div
+                class="mt-5 border-t border-white/10 pt-5"
+            >
+                <p class="text-xs text-[#a9907c]">
+                    Opening Hours
+                </p>
 
-            <p class="mt-1 text-sm">
-                6:00 AM – 10:00 PM
-            </p>
+                <p class="mt-1 text-sm">
+                    Daily · 6:00 AM – 10:00 PM
+                </p>
+            </div>
+
         </div>
 
     </div>
 
+
     <div class="border-t border-white/10">
-        <div class="mx-auto max-w-6xl px-5 py-5 text-center text-xs text-[#957f70] lg:px-8">
+
+        <div
+            class="mx-auto max-w-7xl px-5 py-5 text-center text-xs text-[#927c6a] lg:px-8"
+        >
             © {{ date('Y') }} Brew O'Clock. All rights reserved.
         </div>
+
     </div>
 
 </footer>
